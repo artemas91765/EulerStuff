@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int digitvalue(int index, char digits[]){
+long long digitvalue(int index, char digits[]){
 		char temp[2];
 		temp[0] = digits[index];
 		temp[1] = digits[index + 1];
@@ -57,7 +57,9 @@ int main(int argc, char *argv[]){
 			result = tempresult;
 		}
 	}
-
-	printf("value is: %lld", result);
+	int j = 0;
+	tempresult = digitvalue(j, digits) * digitvalue(j + 40, digits) * digitvalue(j + 80, digits) * digitvalue(j + 120, digits);
+	printf("test: %lld", tempresult);
+	//printf("value is: %lld", result);
 	return 0;
 }
