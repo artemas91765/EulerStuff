@@ -22,7 +22,6 @@ int main(int argc, char *argv[]){
 			}
 		}
 	}
-
 	//test column
 	for(int i = 0; i < 1480; i += 2){
 		tempresult = digitvalue(i, digits) * digitvalue(i + 40, digits) * digitvalue(i + 80, digits) * digitvalue(i + 120, digits);
@@ -41,7 +40,6 @@ int main(int argc, char *argv[]){
 			}
 		}
 	}
-
 	//test other diagonal
 	for(int i = 120; i < 1600; i += 2){
 		//make sure not out of bounds
